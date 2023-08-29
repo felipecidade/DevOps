@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_rm_mc_crm_np_01_euw_rg_int_accountbulkupd_logicapp_name": {
+            "value": null
+        },
+        "userassignedidentities_rm_mc_crm_np_01_euw_rg_int_uami_externalid": {
+            "value": null
+        },
+        "connections_commondataservice_externalid": {
+            "value": null
+        }
+    }
+}
