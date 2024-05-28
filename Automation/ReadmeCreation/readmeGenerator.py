@@ -87,18 +87,18 @@ def outputsTable(output):
 
 def generateReadme(armTemplate, resourceName):
   readme = "# "+ resourceName + "\n\n"
-  readme += "## Resource types \n\n"
+  readme += "## Resource types\n\n"
   readme += resourcesTable(armTemplate.get("resources"))
   readme += "\n"
-  readme += "## Parameters \n\n"
+  readme += "## Parameters\n\n"
   readme += parameterTable(armTemplate.get("parameters"))
   readme += "\n"
   readme += parameterUsage(armTemplate.get("parameters"))
-  readme += "## Outputs \n\n"
+  readme += "## Outputs\n\n"
   readme += outputsTable(armTemplate.get("outputs"))
   readme += "\n"
-  readme += "## Considerations \n\n"
-  readme += "## Additional resources \n\n"
+  readme += "## Considerations\n\n"
+  readme += "## Additional resources\n\n"
 
 
   return readme
