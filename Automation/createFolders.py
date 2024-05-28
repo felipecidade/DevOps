@@ -6,10 +6,10 @@ def createFolderStructure(basePath, folderStructure):
     os.makedirs(folderPath)
 
     if "files" in folderContent:
-        for file_name, file_content in folderContent["files"].items():
-            file_path = os.path.join(folderPath, fileName)
+        for fileName, fileContent in folderContent["files"].items():
+            filePath = os.path.join(folderPath, fileName)
             with open(file_path, "w") as file:
-                file.write(file_content)
+                file.write(fileContent)
 
     if "subfolders" in folderContent:
       createFolderStructure(folderPath, folderContent["subfolders"])
